@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+,#!/usr/bin/env python
 # coding: utf-8
 #import Library
 import pandas as pd
@@ -15,7 +15,7 @@ import pickle
 warnings.filterwarnings("ignore")
 
 # Load the dataset
-data=pd.read_csv("credit_card.csv")
+data=pd.read_csv("credit_card.csv",low_memory=False)
 
 # Encoding data
 label_encoder = preprocessing.LabelEncoder()
