@@ -2,8 +2,6 @@ pandas
 matplotlib
 seaborn  
 numpy
-os
-re
 scikit-learn==0.24.2
 pickle
 streamlit 
