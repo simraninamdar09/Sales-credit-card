@@ -4,5 +4,6 @@ seaborn
 numpy
 scikit-learn==0.24.2
 pickle-mixin==1.0.2
-streamlit 
+streamlit
+scipy==1.7.0
  
