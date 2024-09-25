@@ -90,27 +90,27 @@ pk=bag_c.predict(x_test)
 
 
 
-cardcategory= st.selectbox('cardcategory', data['Card_Category'].unique())
-Activation30Days = st.selectbox('Activation30Days', data['Activation_30_Days'].unique())
-CustomerAcqCost= st.selectbox('CustomerAcqCost', data['Customer_Acq_Cost'].unique())
-creditlimit = st.selectbox('creditlimit', data['credit_limit'].unique())
-TotalRevolvingBal= st.selectbox('TotalRevolvingBal', data['Total_Revolving_Bal'].unique())
-AvgUtilizationRatio = st.selectbox('AvgUtilizationRatio', data['Avg_Utilization_Ratio'].unique())
-ExpType = st.selectbox('ExpType', data['Exp Type'].unique())
-revenue = st.selectbox('revenue', data['Revenue'].unique())
+Card_category= st.selectbox('Card_category', data['Card_Category'].unique())
+Activation_in_30_Days = st.selectbox('Activation_in_30_Days', data['Activation_30_Days'].unique())
+Customer_ Acquisition_Cost= st.selectbox('Customer_ Acquisition_Cost', data['Customer_Acq_Cost'].unique())
+Credit_Limit = st.selectbox('Credit_Limit', data['credit_limit'].unique())
+Total_Revolving_Balance= st.selectbox('Total_Revolving_Balance', data['Total_Revolving_Bal'].unique())
+Average_Utilization_Ratio = st.selectbox('Average_Utilization_Ratio', data['Avg_Utilization_Ratio'].unique())
+Expense_Type = st.selectbox('Expense_Type', data['Exp Type'].unique())
+Revenue = st.selectbox('Revenue', data['Revenue'].unique())
 
 
 
 if st.button('Prevention Type'):
     df = {
-        'Card_Category':cardcategory,
-        'Activation_30_Days':Activation30Days,
-        'Customer_Acq_Cost': CustomerAcqCost,
-        'credit_limit': creditlimit,
-        'Total_Revolving_Bal': TotalRevolvingBal,
-        'Avg_Utilization_Ratio': AvgUtilizationRatio,
-        'Exp Type':ExpType,
-        'Revenue':revenue
+        'Card_Category':Card_category,
+        'Activation_30_Days':Activation_in_30_Days,
+        'Customer_Acq_Cost': Customer_ Acquisition_Cost,
+        'credit_limit': Credit_Limit,
+        'Total_Revolving_Bal': Total_Revolving_Balance,
+        'Avg_Utilization_Ratio': Average_Utilization_Ratio,
+        'Exp Type':Expense_Type,
+        'Revenue':Revenue
     }
 
     df1 = pd.DataFrame(df, index=[1])
