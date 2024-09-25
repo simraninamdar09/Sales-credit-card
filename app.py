@@ -90,14 +90,14 @@ pk=bag_c.predict(x_test)
 
 
 
-Card_category= st.selectbox('Card_category', data['Card_Category'].unique())
-Activation_in_30_Days = st.selectbox('Activation_in_30_Days', data['Activation_30_Days'].unique())
-Customer_Acquisition_Cost= st.selectbox('Customer_Acquisition_Cost', data['Customer_Acq_Cost'].unique())
-Credit_Limit = st.selectbox('Credit_Limit', data['credit_limit'].unique())
-Total_Revolving_Balance= st.selectbox('Total_Revolving_Balance', data['Total_Revolving_Bal'].unique())
-Average_Utilization_Ratio = st.selectbox('Average_Utilization_Ratio', data['Avg_Utilization_Ratio'].unique())
-Expense_Type = st.selectbox('Expense_Type', data['Exp Type'].unique())
-Revenue = st.selectbox('Revenue', data['Revenue'].unique())
+Card_category= st.selectbox('Card_category', sorted(data['Card_Category'].unique()))
+Activation_in_30_Days = st.selectbox('Activation_in_30_Days', sorted(data['Activation_30_Days'].unique()))
+Customer_Acquisition_Cost= st.selectbox('Customer_Acquisition_Cost', sorted(data['Customer_Acq_Cost'].unique()))
+Credit_Limit = st.selectbox('Credit_Limit', sorted(data['credit_limit'].unique()))
+Total_Revolving_Balance= st.selectbox('Total_Revolving_Balance', sorted(data['Total_Revolving_Bal'].unique()))
+Average_Utilization_Ratio = st.selectbox('Average_Utilization_Ratio', sorted(data['Avg_Utilization_Ratio'].unique()))
+Expense_Type = st.selectbox('Expense_Type', sorted(data['Exp Type'].unique()))
+Revenue = st.selectbox('Revenue', sorted(data['Revenue'].unique()))
 
 
 
