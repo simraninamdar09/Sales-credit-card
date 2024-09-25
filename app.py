@@ -31,7 +31,7 @@ data['revenue'] = data['Annual_Fees']+data['Total_Trans_Amt'] + data['Interest_E
 #Drop col
 col_to_drop = ['Client_Num','Week_Num','Week_Start_Date','Interest_Earned','Total_Trans_Vol','Annual_Fees','current_year',
                'Total_Trans_Amt','Qtr','Use Chip']
-data.drop(columns=col_to_drop)
+data.drop(columns=col_to_drop,inplace=True)
 
 # Outlier  Detection and treatment onRevenue and Credit Limit column
 # Treat outliers using IQR method-credit limit
