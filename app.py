@@ -74,7 +74,7 @@ y = data['Delinquent_Acc']
 # Split the data into training and testing sets
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=42)
 
-# Create the Bagging clssifier
+# Create the Bagging classifier
 bag_c=BaggingClassifier()
 bag1 =bag_c.fit(x_train,y_train)
 bag1.score(x_train,y_train)
