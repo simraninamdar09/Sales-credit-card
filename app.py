@@ -69,7 +69,7 @@ scaler = MaxAbsScaler()
 data[col_tarnsform] = scaler.fit_transform(data[col_tarnsform])
 
 # Split the data into features (X) and target (y)
-x = data['Card_Category','Activation_30_Days','Customer_Acq_Cost','credit_limit','Total_Revolving_Bal','Avg_Utilization_Ratio','Exp Type','Revenue']
+x = data.iloc[:,0:8]
 y = data['Delinquent_Acc']
 # Split the data into training and testing sets
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=42)
