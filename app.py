@@ -13,7 +13,7 @@ from sklearn.ensemble import BaggingClassifier
 from sklearn.metrics import accuracy_score
 import pickle
 warnings.filterwarnings("ignore")
-
+st.title("Sales Credit Card")
 # Load the dataset
 data=pd.read_csv("credit_card.csv",low_memory=False)
 
